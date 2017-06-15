@@ -91,16 +91,18 @@
 
 
 
-<meta name="description" content="转载请注明出处Apple原文地址:https://developer.apple.com/documentation/arkit  #####ARKit   Integrate iOS device camera and motion features to produce augmented reality experiences in your app or game. ARKit 将 iO">
+<meta name="description" content="转载请注明出处Apple原文地址:  https://developer.apple.com/documentation/arkit/understanding_augmented_reality   ##Understanding Augmented Reality   Discover concepts, features, and best practices for building g">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ARKit学习-1">
-<meta property="og:url" content="http://steedfly.com/2017/06/15/ARKit学习-1/index.html">
+<meta property="og:title" content="ARKit学习-2">
+<meta property="og:url" content="http://steedfly.com/2017/06/15/ARKit学习-2/index.html">
 <meta property="og:site_name" content="小羊快跑">
-<meta property="og:description" content="转载请注明出处Apple原文地址:https://developer.apple.com/documentation/arkit  #####ARKit   Integrate iOS device camera and motion features to produce augmented reality experiences in your app or game. ARKit 将 iO">
-<meta property="og:updated_time" content="2017-06-15T07:36:18.113Z">
+<meta property="og:description" content="转载请注明出处Apple原文地址:  https://developer.apple.com/documentation/arkit/understanding_augmented_reality   ##Understanding Augmented Reality   Discover concepts, features, and best practices for building g">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1455032-8c171fec8ceb41e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-06-15T07:57:14.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ARKit学习-1">
-<meta name="twitter:description" content="转载请注明出处Apple原文地址:https://developer.apple.com/documentation/arkit  #####ARKit   Integrate iOS device camera and motion features to produce augmented reality experiences in your app or game. ARKit 将 iO">
+<meta name="twitter:title" content="ARKit学习-2">
+<meta name="twitter:description" content="转载请注明出处Apple原文地址:  https://developer.apple.com/documentation/arkit/understanding_augmented_reality   ##Understanding Augmented Reality   Discover concepts, features, and best practices for building g">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1455032-8c171fec8ceb41e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://steedfly.com/2017/06/15/ARKit学习-1/"/>
+  <link rel="canonical" href="http://steedfly.com/2017/06/15/ARKit学习-2/"/>
 
 
 
 
 
-  <title>ARKit学习-1 | 小羊快跑</title>
+  <title>ARKit学习-2 | 小羊快跑</title>
   
 
 
@@ -263,7 +265,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://steedfly.com/2017/06/15/ARKit学习-1/">
+    <link itemprop="mainEntityOfPage" href="http://steedfly.com/2017/06/15/ARKit学习-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小羊快跑">
@@ -280,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ARKit学习-1</h1>
+          <h1 class="post-title" itemprop="name headline">ARKit学习-2</h1>
         
 
         <div class="post-meta">
@@ -292,7 +294,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-15T15:34:24+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-15T15:56:13+08:00">
                 2017-06-15
               </time>
             
@@ -328,115 +330,65 @@
 
       
         <blockquote>
-<p>转载请注明出处<br>Apple原文地址:<a href="https://developer.apple.com/documentation/arkit" target="_blank" rel="external">https://developer.apple.com/documentation/arkit</a></p>
-</blockquote>
-<p>#####ARKit</p>
-<blockquote>
-<ul>
-<li>Integrate iOS device camera and motion features to produce augmented reality experiences in your app or game.</li>
-<li>ARKit 将 iOS 设备的摄像头和设备动作检测 (Motion) 功能，集成到您的应用或者游戏当中，从而为用户提供增强现实体验。</li>
-</ul>
+<p>转载请注明出处<br>Apple原文地址:  <a href="https://developer.apple.com/documentation/arkit/understanding_augmented_reality" target="_blank" rel="external">https://developer.apple.com/documentation/arkit/understanding_augmented_reality</a></p>
 </blockquote>
 <hr>
-<p>#####Overview</p>
+<p>##Understanding Augmented Reality</p>
 <blockquote>
 <ul>
-<li>Augmented reality (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s camera in a way that makes those elements appear to inhabit the real world. ARKit combines device motion tracking, camera scene capture, advanced scene processing, and display conveniences to simplify the task of building an AR experience.</li>
-<li>所谓的增强现实 (Augmented Reality, AR)，指的是向设备摄像头产生的实时动态视图中，添加 2D 或者 3D 元素，然后用某种方法让这些元素看起来就处于现实世界当中，所产生一种用户体验。ARKit 提供了设备动作追踪、相机场景捕获和高级场景处理，并让 AR 元素的展示变得极为便利，从而大大简化了建立 AR 用户体验的工作难度。</li>
-</ul>
-</blockquote>
-<hr>
-<p>#####Topics</p>
-<p>######First Steps</p>
-<ul>
+<li>Discover concepts, features, and best practices for building great AR experiences.</li>
 <li>探索 AR 的概念、特性，以及了解构建优秀 AR 场景的最佳实践。</li>
 </ul>
-<hr>
-<p>#####1.ARSession类</p>
-<blockquote>
-<ul>
-<li>A shared object that manages the device camera and motion processing needed for augmented reality experiences.</li>
-<li>这是一个单例, 是 ARKit 的核心类，用于控制设备摄像头，处理传感器数据，对捕获的图像进行分析等等。</li>
-</ul>
 </blockquote>
 <hr>
-<p>######Configurations</p>
-<p>#####2.ARSessionConfiguration类</p>
+<p>####Overview</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1455032-8c171fec8ceb41e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <blockquote>
 <ul>
-<li>A basic configuration that tracks a device’s orientation only.</li>
-<li>跟踪设备方向的一个基本配置, 在运行时，需要指定AR运行的配置</li>
-</ul>
-</blockquote>
-<p>#####3. ARWorldTrackingSessionConfiguration类</p>
-<blockquote>
-<ul>
-<li>ARSessionConfiguration的子类</li>
-<li>A configuration that tracks a device’s orientation and position, and that detects real-world surfaces seen by the device camera.</li>
-<li>配置跟踪设备的方向和位置,以及检测设备摄像头所看到的现实世界的表面</li>
+<li>The basic requirement for any AR experience—and the defining feature of ARKit—is the ability to create and track a correspondence between the real-world space the user inhabits and a virtual space where you can model visual content. When your app displays that content together with a live camera image, the user experiences augmented reality: the illusion that your virtual content is part of the real world.</li>
+<li>对于所有的 AR 场景而言，最基本要求是：创建并追踪现实空间和虚拟空间之间的关系，其中，现实空间是用户所处的世界，虚拟空间是可对可视化内容进行建模的世界，这同时也是 ARKit 的基本特征。当您的应用将这些虚拟内容与实时视频结合，并一起显示的时候，用户就可以体验到所谓的「增强现实」：您的虚拟内容成为了真实世界的一部分，尽管这只是「错觉」而已。</li>
 </ul>
 </blockquote>
 <hr>
-<p>######Standard Views</p>
-<p>#####4. ARSCNView类</p>
+<p>####How World Tracking Works</p>
 <blockquote>
 <ul>
-<li>A view for displaying AR experiences that augment the camera view with 3D SceneKit content</li>
-<li>用来增强相机通过 3D SceneKit 所捕捉到的内容并展示 AR 效果的一个 view</li>
-</ul>
-</blockquote>
-<p>#####5. ARSKView类</p>
-<blockquote>
-<ul>
-<li>A view for displaying AR experiences that augment the camera view with 2D SpriteKit content</li>
-<li>用来增强相机通过 2D SpriteKit 所捕捉到的内容并展示 AR 效果的一个 view</li>
+<li>To create a correspondence between real and virtual spaces, ARKit uses a technique called <em>visual-inertial odometry</em>. This process combines information from the iOS device’s motion sensing hardware with computer vision analysis of the scene visible to the device’s camera. ARKit recognizes notable features in the scene image, tracks differences in the positions of those features across video frames, and compares that information with motion sensing data. The result is a high-precision model of the device’s position and motion.</li>
+<li>为了在现实世界和虚拟世界之间建立对应关系，ARKit 使用了一种被称为视觉惯性里程计的技术。这项技术会将 iOS 设备的动作感测硬件信息，加上对可见场景的计算机视觉分析功能，然后与设备的摄像头相结合。ARKit 将会去识别场景图像当中的显著特征，然后在视频帧中追踪这些特征位置的距离，然后再将这些信息与动作感测数据进行比较。从而生成具备设备位置和动作特征的高精度模型。</li>
 </ul>
 </blockquote>
 <hr>
-<p>######Real-World Objects and Positions</p>
-<p>#####6.ARAnchor类</p>
 <blockquote>
 <ul>
-<li>A real-world position and orientation that can be used for placing objects in an AR scene.</li>
-<li>真实世界的位置和方向, 用于在一个AR场景中放置一个物体</li>
-</ul>
-</blockquote>
-<p>#####7.ARPlaneAnchor类</p>
-<blockquote>
-<ul>
-<li>Information about the position and orientation of a real-world flat surface detected in an AR session.</li>
-<li>在一个AR Session 会话中检测一个真实世界中平面的位置和方向的相关信息</li>
-</ul>
-</blockquote>
-<h5 id="8-ARHitTestResult类"><a href="#8-ARHitTestResult类" class="headerlink" title="8.ARHitTestResult类"></a>8.ARHitTestResult类</h5><blockquote>
-<ul>
-<li>Information about a real-world surface found by examining a point in the device camera view of an AR session.</li>
-<li>在一个AR Session会话中通过检测相机视图中的一个点来获取真实世界中表面的相关信息</li>
+<li>World tracking also analyzes and understands the contents of a scene. Use hit-testing methods (see the <a href="https://developer.apple.com/documentation/arkit/arhittestresult" target="_blank" rel="external">ARHitTestResult
+</a> class) to find real-world surfaces corresponding to a point in the camera image. If you enable the <a href="https://developer.apple.com/documentation/arkit/arworldtrackingsessionconfiguration/2867263-planedetection" target="_blank" rel="external">planeDetection
+</a> setting in your session configuration, ARKit detects flat surfaces in the camera image and reports their position and sizes. You can use hit-test results or detected planes to place or interact with virtual content in your scene.</li>
+<li>全局追踪 (World Tracking) 同样也可以分析和识别场景当中的内容。通过使用点击测试 (hit-testing) 方法（参见 <a href="https://developer.apple.com/documentation/arkit/arhittestresult" target="_blank" rel="external">ARHitTestResult</a>类），从而找到与相机图像中的某个点所对应的真实世界面。如果您在 Session (会话) 配置当中启用了 <a href="https://developer.apple.com/documentation/arkit/arworldtrackingsessionconfiguration/2867263-planedetection" target="_blank" rel="external">planeDetection</a>配置的话，那么 ARKit 就会去检测相机图像当中的水平面，并报告其位置和大小。您可以使用点击测试所生成的结果，或者使用所检测到的水平面，从而就可以在场景当中放置虚拟内容，或者与之进行交互。</li>
 </ul>
 </blockquote>
 <hr>
-<p>######Camera and Scene Details</p>
-<h5 id="9-ARFrame类"><a href="#9-ARFrame类" class="headerlink" title="9.ARFrame类"></a>9.ARFrame类</h5><blockquote>
-<ul>
-<li>A video image and position tracking information captured as part of an AR session.</li>
-<li>捕获一个视频图像和位置追踪信息作为一个AR 会话的一部分。</li>
-</ul>
-</blockquote>
-<p>#####10. ARCamera类</p>
+<p>####Best Practices and Limitations</p>
 <blockquote>
 <ul>
-<li>Information about the camera position and imaging characteristics for a captured video frame in an AR session.</li>
-<li>在一个AR会话中摄像机的位置和成像特征信息为捕获视频帧</li>
+<li>World tracking is an inexact science. This process can often produce impressive accuracy, leading to realistic AR experiences. However, it relies on details of the device’s physical environment that are not always consistent or are difficult to measure in real time without some degree of error. To build high-quality AR experiences, be aware of these caveats and tips.</li>
+<li>全局追踪是一项不精确的科学 (inexact science)。尽管在这个过程当中，经常会产生可观的准确度，从而让 AR 的体验更加真实。然而，它严重依赖于设备物理环境的相关细节，而这些细节并不总是一致，有些时候也难以实时测量，这也就导致这些物理细节往往都会存在某种程度的错误。要建立高品质的 AR 体验，那么请注意下述这些注意事项和提示：</li>
 </ul>
 </blockquote>
-<p>#####11.ARLightEstimate类</p>
-<blockquote>
 <ul>
-<li>Estimated scene lighting information associated with a captured video frame in an AR session.</li>
-<li>在一个AR会话中估计场景照明信息关联到一个捕获的视频帧</li>
+<li><strong>Design AR experiences for predictable lighting conditions. </strong>World tracking involves image analysis, which requires a clear image. Tracking quality is reduced when the camera can’t see details, such as when the camera is pointed at a blank wall or the scene is too dark.</li>
+<li>基于可见的照明条件来设计 AR 场景。全局追踪涉及到了图像分析的相关内容，因此就需要我们提供清晰的图像。如果摄像头没有办法看到相关的物理细节，比如说摄像头拍到的是一面空空如也的墙壁，或者场景的光线实在太暗的话，那么全局追踪的质量就会大大降低。</li>
 </ul>
-<p>转载请注明出处</p>
-</blockquote>
+<hr>
+<ul>
+<li><strong>Use tracking quality information to provide user feedback</strong> World tracking correlates image analysis with device motion. ARKit develops a better understanding of the scene if the device is moving, even if the device moves only subtly. Excessive motion—too far, too fast, or shaking too vigorously—results in a blurred image or too much distance for tracking features between video frames, reducing tracking quality. The <a href="https://developer.apple.com/documentation/arkit/arcamera" target="_blank" rel="external">ARCamera
+</a> class provides tracking state reason information, which you can use to develop UI that tells a user how to resolve low-quality tracking situations.</li>
+<li>根据追踪质量的相关信息来给用户进行反馈提示。全局追踪会将图像分析与设备的动作模式关联起来。如果设备正在移动的话，那么 ARKit 就可以更好地对场景进行建模，这样即便设备只是略微晃动，也不会影响追踪质量。但是一旦用户的动作过多、过快或者晃动过于激烈，就会导致图像变得模糊，或者导致视频帧中要追踪的特征之间的距离过大，从而致使追踪质量的降低。<a href="https://developer.apple.com/documentation/arkit/arcamera" target="_blank" rel="external">ARCamera</a>类能够提供追踪状态，此外还能提供导致该状态出现的相关原因，您可以在 UI 上展示这些信息，告诉用户如何解决追踪质量低这个问题。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>Allow time for plane detection to produce clear results, and disable plane detection when you have the results you need.</strong> Plane detection results vary over time—when a plane is first detected, its position and extent may be inaccurate. As the plane remains in the scene over time, ARKit refines its estimate of position and extent. When a large flat surface is in the scene, ARKit may continue changing the plane anchor’s position, extent, and transform after you’ve already used the plane to place content.</li>
+<li>给水平面检测预留点时间来生成清晰的结果，一旦您获得所需的结果后，就禁用水平面检测。一开始对水平面进行检测的时候，所检测到的水平面位置和范围很可能不准确。不过随着时间的推移，只要水平面仍然保持在场景当中，那么 ARKit 就能够较为精确地估计水平面的位置和范围。当场景中有一个比较大的平坦表面的话，就算您已经使用过这个水平面来放置内容，那么ARKit 可能还会继续对水平面的锚点位置、范围和变换点进行修正。</li>
+</ul>
 
       
     </div>
@@ -494,15 +446,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/06/15/ARKit学习-1/" rel="next" title="ARKit学习-1">
+                <i class="fa fa-chevron-left"></i> ARKit学习-1
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/15/ARKit学习-2/" rel="prev" title="ARKit学习-2">
-                ARKit学习-2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -549,17 +501,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -614,22 +557,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#8-ARHitTestResult类"><span class="nav-number">1.</span> <span class="nav-text">8.ARHitTestResult类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-ARFrame类"><span class="nav-number">2.</span> <span class="nav-text">9.ARFrame类</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
